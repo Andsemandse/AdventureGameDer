@@ -45,7 +45,7 @@ public class UserInter
                     if (willGoWest)
                     {
                         System.out.println("Du valgte west.");
-                        ad.West();
+                        ad.goWest();
                         System.out.println(ad.look());
                     } else
                         System.out.println("Du kan ikke gå denne vej");

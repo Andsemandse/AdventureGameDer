@@ -52,14 +52,27 @@ public class Adventure
 
         currentRoom = room1;
     }
-    public boolean goEast()
+
+    public boolean goEast() {
+        if (currentRoom.getEast() == null) {
+            return false;
+        } else {
+            currentRoom = currentRoom.getEast();
+        }
+
+
+
+    public boolean goWest()
     {
-        if (currentRoom.getEast() == null)
+        if (currentRoom.getWest() == null)
         {
+            return false;
+        }
+        else
+        {
+            currentRoom = currentRoom.getWest();
 
-
-//Boolean fis skal på plads
-
+    }
 
     public String look()
     {
